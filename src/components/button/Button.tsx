@@ -35,6 +35,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 		},
 		ref,
 	) => {
+		const str = 'OK';
 		return (
 			<Sc.Button
 				ref={ref}
@@ -45,7 +46,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 				onClick={onClick}
 				{...rest}
 			>
-				{children} OK3
+				{children} {str}
 			</Sc.Button>
 		);
 	},
