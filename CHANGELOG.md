@@ -1,5 +1,17 @@
 # @pkyad/uilib1
 
+## 1.3.0
+
+### Minor Changes
+
+- added test component
+
+## 1.2.0
+
+### Minor Changes
+
+- label change
+
 ## 1.1.0
 
 ### Minor Changes
