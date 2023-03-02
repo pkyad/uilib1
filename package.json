@@ -32,7 +32,7 @@
 		"test": "NODE_ENV=test jest",
 		"test:coverage": "NODE_ENV=test jest --coverage",
 		"test:watch": "NODE_ENV=test jest --watch",
-		"lint-commit-message": "commitlint --edit"
+		"commitlint": "commitlint --edit"
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx}": [
