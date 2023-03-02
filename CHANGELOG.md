@@ -1,5 +1,23 @@
 # @pkyad/uilib1
 
+## 1.6.0
+
+### Minor Changes
+
+- export method
+
+## 1.5.0
+
+### Minor Changes
+
+- build update
+
+## 1.4.0
+
+### Minor Changes
+
+- export
+
 ## 1.3.0
 
 ### Minor Changes
