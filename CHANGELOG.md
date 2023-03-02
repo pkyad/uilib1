@@ -1,5 +1,15 @@
 # @pkyad/uilib1
 
+## 1.1.0
+
+### Minor Changes
+
+- disabled commit on versioning using changesets
+
+### Patch Changes
+
+- 99322d0: summary for change in the button
+
 ## 1.0.0
 
 ### Major Changes
