@@ -19,3 +19,7 @@ this will create a changeset file in the .changeset folder
 then run
 
 yarn gen-changelog
+
+then commit files with
+
+git commit -m "chore: version release"
