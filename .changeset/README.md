@@ -6,3 +6,16 @@ find the full documentation for it [in our repository](https://github.com/change
 
 We have a quick list of common questions to get you started engaging with this project in
 [our documentation](https://github.com/changesets/changesets/blob/main/docs/common-questions.md)
+
+for commiting use correct message format
+e.g. git commit -m "feat: added feature one"
+
+then run
+
+yarn changeset
+
+this will create a changeset file in the .changeset folder
+
+then run
+
+yarn gen-changelog

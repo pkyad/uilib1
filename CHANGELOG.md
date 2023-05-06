@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 2.0.0
+
+### Major Changes
+
+- Storybook upgrade
+
 ## 1.6.0
 
 ### Minor Changes
