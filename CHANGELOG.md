@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 2.6.0
+
+### Minor Changes
+
+- readme update 2
+
 ## 2.5.0
 
 ### Minor Changes

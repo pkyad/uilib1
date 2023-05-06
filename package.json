@@ -1,6 +1,6 @@
 {
 	"name": "@pkyad/uilib1",
-	"version": "2.5.0",
+	"version": "2.6.0",
 	"license": "MIT",
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com/pkyad"
@@ -27,7 +27,7 @@
 		"gen-changelog": "changeset version",
 		"lint": "eslint . --ext .ts,.tsx,.js,.jsx",
 		"prepare": "husky install",
-		"release": "changeset publish",
+		"release": "yarn build;changeset publish",
 		"test": "NODE_ENV=test jest",
 		"test:coverage": "NODE_ENV=test jest --coverage",
 		"test:watch": "NODE_ENV=test jest --watch",
