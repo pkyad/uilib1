@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 2.5.0
+
+### Minor Changes
+
+- bbe7ad5: test
+
 ## 2.1.0
 
 ### Minor Changes
