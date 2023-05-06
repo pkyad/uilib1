@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 2.1.0
+
+### Minor Changes
+
+- f66c0e7: updated readme
+
 ## 2.0.0
 
 ### Major Changes
