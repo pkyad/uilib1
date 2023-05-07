@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 2.11.0
+
+### Minor Changes
+
+- minor
+
 ## 2.10.0
 
 ### Minor Changes
