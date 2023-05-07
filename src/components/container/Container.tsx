@@ -1,5 +1,5 @@
-import { classNames } from '@src/utils/classNames';
-import * as Sc from './Container.styled';
+import { classNames } from '@src/utils/classNames'
+import * as Sc from './Container.styled'
 
 export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
 	/**
@@ -7,7 +7,7 @@ export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
 	 *
 	 * @default false
 	 */
-	fluid?: boolean;
+	fluid?: boolean
 }
 
 /**
@@ -28,20 +28,20 @@ export const Container = ({
 	const classes = classNames(
 		'Container-root',
 		fluid ? 'Container-fluid' : '',
-		className,
-	);
+		className
+	)
 
 	if (fluid) {
 		return (
 			<Sc.FluidContainer className={classes} {...rest}>
 				{children}
 			</Sc.FluidContainer>
-		);
+		)
 	}
 
 	return (
 		<Sc.Container className={classes} {...rest}>
 			{children}
 		</Sc.Container>
-	);
-};
+	)
+}
