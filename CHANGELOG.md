@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 2.8.0
+
+### Minor Changes
+
+- emotion version bump
+
 ## 2.7.0
 
 ### Minor Changes
