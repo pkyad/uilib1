@@ -1,10 +1,10 @@
-import { forwardRef } from 'react';
-import { classNames } from '@src/utils/classNames';
-import * as Sc from './Button.styled';
+import { forwardRef } from 'react'
+import { classNames } from '@src/utils/classNames'
+import * as Sc from './Button.styled'
 
-export type Color = 'primary' | 'secondary' | 'success' | 'error' | 'warn';
+export type Color = 'primary' | 'secondary' | 'success' | 'error' | 'warn'
 
-export type Variant = 'solid' | 'outline' | 'text';
+export type Variant = 'solid' | 'outline' | 'text'
 
 export interface ButtonProps
 	extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -13,13 +13,13 @@ export interface ButtonProps
 	 *
 	 * @default 'primary'
 	 */
-	color?: Color;
+	color?: Color
 	/**
 	 * The visual style of the Button.
 	 *
 	 * @default 'solid'
 	 */
-	variant?: Variant;
+	variant?: Variant
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -33,9 +33,9 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 			children,
 			...rest
 		},
-		ref,
+		ref
 	) => {
-		const str = 'OK';
+		const str = 'OK'
 		return (
 			<Sc.Button
 				ref={ref}
@@ -48,8 +48,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 			>
 				{children} {str}
 			</Sc.Button>
-		);
-	},
-);
+		)
+	}
+)
 
-Button.displayName = 'Button';
+Button.displayName = 'Button'

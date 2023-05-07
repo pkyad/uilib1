@@ -1,10 +1,10 @@
 module.exports = {
 	bracketSameLine: false,
 	printWidth: 80,
-	semi: true,
+	semi: false,
 	singleQuote: true,
 	tabWidth: 2,
-	trailingComma: 'all',
+	trailingComma: 'none',
 	useTabs: true,
 	/**
 	 * A workaround for pnpm. If you are using yarn or npm, you can remove this line.
@@ -18,6 +18,6 @@ module.exports = {
 		'^@src/hooks/(.*)$',
 		'^@src/utils/(.*)$',
 		'^@src/constants/(.*)$',
-		'^[./]',
-	],
-};
+		'^[./]'
+	]
+}
