@@ -10,6 +10,9 @@
 		"type": "git",
 		"url": ""
 	},
+	"bin": {
+		"uiscript": "scripts/main.ts"
+	},
 	"sideEffects": false,
 	"exports": {
 		"import": "./dist/esm/index.js",
@@ -27,7 +30,7 @@
 		"gen-changelog": "changeset version",
 		"lint": "eslint . --ext .ts,.tsx,.js,.jsx",
 		"prepare": "husky install",
-		"release": "yarn test:coverage;yarn build;changeset publish",
+		"release": "yarn build;changeset publish",
 		"test": "NODE_ENV=test jest",
 		"test:coverage": "NODE_ENV=test jest --coverage",
 		"test:watch": "NODE_ENV=test jest --watch",

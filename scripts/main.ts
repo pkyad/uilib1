@@ -1,3 +1,5 @@
+#!/usr/bin/env tsx
+
 /* eslint-disable no-console */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import select from '@inquirer/select'
