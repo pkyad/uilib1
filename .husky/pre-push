@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
-yarn exec lint-staged
+
+yarn test:coverage
+yarn e2e:headless
