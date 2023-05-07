@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 2.9.0
+
+### Minor Changes
+
+- Jest covergge threshhold config and it should pass before a release
+
 ## 2.8.0
 
 ### Minor Changes
