@@ -1,6 +1,6 @@
 {
 	"name": "@pkyad/uilib1",
-	"version": "2.6.0",
+	"version": "2.7.0",
 	"license": "MIT",
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com/pkyad"
