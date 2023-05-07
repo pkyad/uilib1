@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 2.10.0
+
+### Minor Changes
+
+- eslint config and tsx scripts
+
 ## 2.9.0
 
 ### Minor Changes
