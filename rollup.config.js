@@ -48,7 +48,8 @@ export default {
 		terser(),
 		del({ targets: 'dist/*' }),
 		postcss({
-			plugins: []
+			plugins: [],
+			extract: true
 		})
 	]
 }
