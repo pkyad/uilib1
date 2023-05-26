@@ -1,5 +1,7 @@
+import './test.css'
+
 const Test = (): JSX.Element => {
-	return <span>test component</span>
+	return <span className="testText">test component</span>
 }
 
 export default Test
