@@ -4,6 +4,7 @@ import { nodeResolve } from '@rollup/plugin-node-resolve'
 import terser from '@rollup/plugin-terser'
 import del from 'rollup-plugin-delete'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
+import postcss from 'rollup-plugin-postcss'
 import typescript from 'rollup-plugin-typescript2'
 import ttypescript from 'ttypescript'
 import pkg from './package.json'
@@ -45,6 +46,9 @@ export default {
 			extensions: ['.ts', '.tsx']
 		}),
 		terser(),
-		del({ targets: 'dist/*' })
+		del({ targets: 'dist/*' }),
+		postcss({
+			plugins: []
+		})
 	]
 }

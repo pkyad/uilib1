@@ -1,5 +1,5 @@
-const test = (): JSX.Element => {
+const Test = (): JSX.Element => {
 	return <span>test component</span>
 }
 
-export default test
+export default Test

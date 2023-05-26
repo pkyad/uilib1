@@ -1,55 +1,53 @@
-import { forwardRef } from 'react'
-import { classNames } from '@src/utils/classNames'
-import * as Sc from './Button.styled'
+import './button.css'
 
-export type Color = 'primary' | 'secondary' | 'success' | 'error' | 'warn'
-
-export type Variant = 'solid' | 'outline' | 'text'
-
-export interface ButtonProps
-	extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps {
 	/**
-	 * The color of the Button.
-	 *
-	 * @default 'primary'
+	 * Is this the principal call to action on the page?
 	 */
-	color?: Color
+	primary?: boolean
 	/**
-	 * The visual style of the Button.
-	 *
-	 * @default 'solid'
+	 * What background color to use
 	 */
-	variant?: Variant
+	backgroundColor?: string
+	/**
+	 * How large should the button be?
+	 */
+	size?: 'small' | 'medium' | 'large'
+	/**
+	 * Button contents
+	 */
+	label: string
+	/**
+	 * Optional click handler
+	 */
+	onClick?: () => void
 }
 
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-	(
-		{
-			id,
-			className,
-			onClick,
-			color = 'primary',
-			variant = 'solid',
-			children,
-			...rest
-		},
-		ref
-	) => {
-		const str = 'OK'
-		return (
-			<Sc.Button
-				ref={ref}
-				id={id}
-				variant={variant}
-				$color={color}
-				className={classNames('button-root', className)}
-				onClick={onClick}
-				{...rest}
-			>
-				{children} {str}
-			</Sc.Button>
-		)
-	}
-)
+/**
+ * Primary UI component for user interaction
+ */
+const Button = ({
+	primary = false,
+	size = 'medium',
+	backgroundColor,
+	label,
+	...props
+}: ButtonProps) => {
+	const mode = primary
+		? 'storybook-button--primary'
+		: 'storybook-button--secondary'
+	return (
+		<button
+			type="button"
+			className={['storybook-button', `storybook-button--${size}`, mode].join(
+				' '
+			)}
+			style={{ backgroundColor }}
+			{...props}
+		>
+			{label}
+		</button>
+	)
+}
 
-Button.displayName = 'Button'
+export default Button
