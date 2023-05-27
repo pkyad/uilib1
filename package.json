@@ -1,6 +1,6 @@
 {
 	"name": "@pkyad/uilib1",
-	"version": "3.1.0",
+	"version": "3.2.0",
 	"license": "MIT",
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com/pkyad"
@@ -78,6 +78,7 @@
 		"@storybook/addon-essentials": "^7.0.9",
 		"@storybook/addon-interactions": "^7.0.9",
 		"@storybook/addon-links": "^7.0.9",
+		"@storybook/addon-styling": "^1.0.8",
 		"@storybook/blocks": "^7.0.9",
 		"@storybook/react": "^7.0.9",
 		"@storybook/react-webpack5": "^7.0.9",
@@ -95,7 +96,9 @@
 		"@typescript-eslint/eslint-plugin": "^5.48.1",
 		"@typescript-eslint/parser": "^5.48.1",
 		"@zerollup/ts-transform-paths": "^1.7.18",
+		"autoprefixer": "^10.4.14",
 		"babel-loader": "^9.1.2",
+		"cssnano": "^6.0.1",
 		"eslint": "8.31.0",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-jsx-a11y": "^6.7.1",
@@ -110,6 +113,8 @@
 		"jest-transform-stub": "^2.0.0",
 		"lint-staged": "^13.1.0",
 		"postcss": "^8.4.23",
+		"postcss-import": "^15.1.0",
+		"postcss-preset-env": "^8.4.1",
 		"prettier": "^2.8.2",
 		"prop-types": "^15.8.1",
 		"react": "^18.2.0",
@@ -119,6 +124,7 @@
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-postcss": "^4.0.2",
 		"rollup-plugin-typescript2": "^0.34.1",
+		"sass": "^1.62.1",
 		"storybook": "^7.0.9",
 		"ts-jest": "^29.0.4",
 		"tslib": "^2.4.1",

@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 3.2.0
+
+### Minor Changes
+
+- extract css
+
 ## 3.1.0
 
 ### Minor Changes

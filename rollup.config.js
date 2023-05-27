@@ -2,6 +2,8 @@ import babel from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import terser from '@rollup/plugin-terser'
+import autoprefixer from 'autoprefixer'
+import cssnano from 'cssnano'
 import del from 'rollup-plugin-delete'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss'
@@ -32,6 +34,11 @@ export default {
 		...Object.keys(pkg.peerDependencies || {}),
 		'./src'
 	],
+	watch: {
+		include: ['src/**/*'],
+		exclude: ['node_modules/**', 'lib'],
+		clearScreen: false
+	},
 	plugins: [
 		peerDepsExternal(),
 		typescript({
@@ -43,13 +50,19 @@ export default {
 		babel({
 			babelHelpers: 'runtime',
 			exclude: 'node_modules/**',
-			extensions: ['.ts', '.tsx']
+			extensions: ['.ts', '.tsx'],
+			presets: ['@babel/env', '@babel/preset-react']
 		}),
 		terser(),
 		del({ targets: 'dist/*' }),
 		postcss({
-			plugins: [],
-			extract: true
+			plugins: [autoprefixer(), cssnano()],
+			inject: true,
+			extract: false,
+			modules: {
+				generateScopedName: `[name]__[local]_${pkg.version}`,
+				hashPrefix: 'prefix'
+			}
 		})
 	]
 }
