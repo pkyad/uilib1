@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 4.2.0
+
+### Minor Changes
+
+- shortner css class name for scss
+
 ## 4.1.0
 
 ### Minor Changes
