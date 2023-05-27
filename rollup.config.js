@@ -61,7 +61,7 @@ export default {
 			extract: 'index.css',
 			minimize: true,
 			modules: {
-				generateScopedName: `[name]__[local]_${pkg.version}`,
+				generateScopedName: `[hash:base64:5]`,
 				hashPrefix: 'prefix'
 			}
 		})
