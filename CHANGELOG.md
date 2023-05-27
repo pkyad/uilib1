@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 4.1.0
+
+### Minor Changes
+
+- removed emotion support
+
 ## 4.0.0
 
 ### Major Changes
