@@ -54,7 +54,7 @@
 		"not op_mini all"
 	],
 	"dependencies": {
-		"@babel/runtime": "^7.20.7",
+		"@babel/runtime": "^7.22.0",
 		"tsconfig-paths-webpack-plugin": "^4.0.1"
 	},
 	"devDependencies": {
