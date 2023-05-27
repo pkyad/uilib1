@@ -57,8 +57,9 @@ export default {
 		del({ targets: 'dist/*' }),
 		postcss({
 			plugins: [autoprefixer(), cssnano()],
-			inject: true,
-			extract: false,
+			inject: false,
+			extract: 'index.css',
+			minimize: true,
 			modules: {
 				generateScopedName: `[name]__[local]_${pkg.version}`,
 				hashPrefix: 'prefix'
