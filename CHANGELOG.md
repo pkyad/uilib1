@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 5.0.0
+
+### Major Changes
+
+- added svgr based icons pipeline
+
 ## 4.2.0
 
 ### Minor Changes
