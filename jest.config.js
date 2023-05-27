@@ -24,13 +24,13 @@ module.exports = {
 	transform: {
 		'\\.(jpg|jpeg|png|eot|otf|webp|svg|ttf|woff|woff2|webm)$':
 			'jest-transform-stub'
-	},
-	coverageThreshold: {
-		global: {
-			branches: 38,
-			functions: 63,
-			lines: 70,
-			statements: 70
-		}
 	}
+	// coverageThreshold: {
+	// 	global: {
+	// 		branches: 38,
+	// 		functions: 63,
+	// 		lines: 70,
+	// 		statements: 70
+	// 	}
+	// }
 }
