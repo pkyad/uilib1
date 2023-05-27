@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 4.0.0
+
+### Major Changes
+
+- SASS support
+
 ## 3.2.0
 
 ### Minor Changes
