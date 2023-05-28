@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 5.4.0
+
+### Minor Changes
+
+- added icons and icons storybook
+
 ## 5.3.0
 
 ### Minor Changes
