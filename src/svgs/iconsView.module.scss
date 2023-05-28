@@ -7,18 +7,24 @@
 	}
 }
 .search-input {
-	border-radius: 1rem;
-	border: grey solid 2px;
+	border-radius: 0.5rem;
+	border: #f7f9fc solid 1px;
 	padding: 1rem;
-	:focus-visible {
-		border: grey solid 2px;
-	}
+	background-color: #f7f9fc;
+	outline: none;
 }
 .icons {
 	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
 }
 .icon-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.copy-to-clipboard {
+	border: none;
+	padding: 0.5rem;
+	cursor: pointer;
 }

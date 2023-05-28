@@ -1,5 +1,17 @@
 # @pkyad/uilib1
 
+## 5.3.0
+
+### Minor Changes
+
+- failing build
+
+## 5.2.0
+
+### Minor Changes
+
+- icons without ref
+
 ## 5.1.0
 
 ### Minor Changes
