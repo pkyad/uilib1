@@ -21,9 +21,7 @@ const config: StorybookConfig = {
 		name: '@storybook/react-webpack5',
 		options: {}
 	},
-	docs: {
-		autodocs: true
-	},
+	docs: {},
 	webpackFinal: async (config, { configType }) => {
 		if (config.resolve) {
 			config.resolve.plugins = [new TsconfigPathsPlugin()]
