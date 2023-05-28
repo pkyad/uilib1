@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 5.5.0
+
+### Minor Changes
+
+- removed babel runtime dependency and added as dev dependency
+
 ## 5.4.0
 
 ### Minor Changes
