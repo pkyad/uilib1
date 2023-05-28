@@ -7,7 +7,7 @@ const IconsView = () => {
 		return Object.values(Icons).map((Icon: any) => {
 			return {
 				Component: Icon,
-				name: Icon.displayName
+				name: Icon.displayName.replace('Svg', '')
 			}
 		})
 	}, [])
