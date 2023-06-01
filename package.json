@@ -91,7 +91,7 @@
 		"@types/react-dom": "^18.0.10",
 		"@types/testing-library__jest-dom": "^5.14.5",
 		"@typescript-eslint/eslint-plugin": "^5.48.1",
-		"@typescript-eslint/parser": "^5.48.1",
+		"@typescript-eslint/parser": "^5.59.8",
 		"@zerollup/ts-transform-paths": "^1.7.18",
 		"autoprefixer": "^10.4.14",
 		"babel-loader": "^9.1.2",
