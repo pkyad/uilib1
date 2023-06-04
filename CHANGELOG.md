@@ -1,5 +1,11 @@
 # @pkyad/uilib1
 
+## 5.6.0
+
+### Minor Changes
+
+- test function export
+
 ## 5.5.0
 
 ### Minor Changes
